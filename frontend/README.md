@@ -14,4 +14,4 @@ I have hesitated between using Javascript or TypeScript. I finally choose [TypeS
 
 ## Vite
 
-TODO
+Vite offers a lot an advantages to quickly and simply developp the frontend part (serving and bundling the code, offering a hot module replacement, great compatibility with React) and seemed to answer my needs.
