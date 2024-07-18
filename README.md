@@ -18,6 +18,14 @@
 
 🤸🏾 Let's go !
 
+## Architecture
+
+TO DO
+
+## How to run the project ?
+
+TO DO
+
 ## 📋 To do
 
 All my tasks will be listed and updated here : https://github.com/users/HeleneAmouzou/projects/2/views/1
