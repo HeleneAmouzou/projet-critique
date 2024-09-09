@@ -1,0 +1,27 @@
+@startuml
+left to right direction
+actor Visitor as v
+actor User as u
+actor Admin as a
+v <|-- u
+u <|-- a
+package critiktout {
+  usecase "S'inscrire" as UC1
+  usecase "Se connecter" as UC2
+  usecase "Ajouter une oeuvre" as UC3
+  usecase "Consulter mes oeuvres" as UC4
+  usecase "Modifier les informations sur une oeuvre" as UC5
+  usecase "Supprimer une oeuvre" as UC6
+  usecase "Gérer les comptes utilisateurs" as UC7
+  usecase "Gérer les oeuvres" as UC8
+}
+v --> UC1
+u --> UC2
+u --> UC3
+u --> UC3
+u --> UC4
+u --> UC5
+u --> UC6
+a --> UC7
+a --> UC8
+@enduml
