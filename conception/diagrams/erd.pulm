@@ -1,0 +1,39 @@
+@startuml
+left to right direction
+
+entity "User" as User{
+  *user_id
+  --
+  firstname
+  lastname
+  pseudo
+  email
+  password
+  picture
+  created_at
+  updated_at
+}
+
+
+entity "Item" {
+  *item_id
+  --
+  title
+  artist
+  type
+  date
+  location
+  poster
+}
+
+entity "Review" {
+  *review_id
+  --
+  note
+  description
+}
+
+User |o--o{ Item
+User |o--o{ Review
+Item |o--o| Review
+@enduml
