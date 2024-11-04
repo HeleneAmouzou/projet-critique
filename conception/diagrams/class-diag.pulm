@@ -1,0 +1,40 @@
+@startuml
+class User {
+  firstname
+  lastname
+  pseudo
+  email
+  password
+  picture
+  created_at
+  updated_at
+}
+
+class Item {
+  title
+  artist
+  type
+  date
+  location
+  poster
+}
+
+class Review {
+  note
+  description
+}
+
+enum ItemType {
+   MOVIE
+   TV_SHOW
+   BOOK
+   CONCERT
+   THEATER_PLAY
+   EXHIBITION
+   OTHER
+}
+
+User *- Item : tracks >
+User *- Review : leaves >
+Item - Review : concerns >
+@enduml
